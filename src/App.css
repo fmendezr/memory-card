@@ -1,0 +1,14 @@
+h1 {
+    font-family: "ringbearer";
+    color: goldenrod
+}
+
+.header {
+    width: 100vw;
+    height: 200px;
+    background-image: url(./Images/tarnished.jpeg);
+}
+
+h1 {
+    font-size: 10vw;
+}
