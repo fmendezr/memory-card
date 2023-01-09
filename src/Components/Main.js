@@ -24,6 +24,23 @@ const Main = () => {
         return bosses;
     };
 
+    const handleClickedCard = (e) => {
+        if (clickedBosses.includes((e.target.id))){
+            setCurrentScore(0); 
+            setClickedBosses([]);
+        } else {
+            setClickedBosses((previousState) => {
+                return previousState.concat(e.target.id);
+            });
+            setCurrentScore((previousState) => {
+                return previousState ++;
+            });
+            if (currentScore >= bestScore){
+                setBestScore(currentScore);
+            };
+        }
+    };
+
     return (    
         <main>
         </main>
