@@ -8,10 +8,10 @@ const Main = () => {
 
     useEffect(() => {
         const loadBosses = async () => {
-            setBosses(await fetchBosses())
+            setBosses(await fetchBosses());
         }
         loadBosses();
-    }, [])
+    }, []);
 
     const fetchBosses = async () => {
         const bossesUrl = "https://eldenring.fanapis.com/api/bosses?limit=100";
@@ -24,13 +24,8 @@ const Main = () => {
         return bosses;
     };
 
-    const handleBtnClick = () => {
-        console.log(bosses);
-    }
-
     return (    
         <main>
-            <button onClick={handleBtnClick}>Click Me</button>
         </main>
     )
 }   
