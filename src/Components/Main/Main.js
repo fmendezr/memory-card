@@ -29,9 +29,7 @@ const Main = () => {
 
     const handleClickedCard = (e) => {
         if (clickedBosses.includes((e.target.id))){
-            setCurrentScore(0); 
-            setClickedBosses([]);
-            shuffleBosses();
+            resetGame();
         } else {
             setClickedBosses((previousState) => {
                 return previousState.concat(e.target.id);
@@ -47,6 +45,12 @@ const Main = () => {
             shuffleBosses();
         }
     };
+
+    const resetGame = () => {
+        setCurrentScore(0); 
+        setClickedBosses([]);
+        shuffleBosses();
+    }
 
     const shuffleArray = array => {
         const arr = [...array]; 
