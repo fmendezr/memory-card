@@ -30,6 +30,7 @@ const Main = () => {
         if (clickedBosses.includes((e.target.id))){
             setCurrentScore(0); 
             setClickedBosses([]);
+            shuffleBosses();
         } else {
             setClickedBosses((previousState) => {
                 return previousState.concat(e.target.id);
@@ -42,8 +43,26 @@ const Main = () => {
                     return previousState + 1;
                 });
             };
+            shuffleBosses();
         }
     };
+
+    const shuffleArray = array => {
+        const arr = [...array]; 
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+        }
+        return arr
+      }
+
+    const shuffleBosses = () => {
+        setBosses((previousState) => {
+            return shuffleArray(previousState);
+        })
+    }
 
     return (    
         <main>
