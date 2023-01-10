@@ -35,10 +35,12 @@ const Main = () => {
                 return previousState.concat(e.target.id);
             });
             setCurrentScore((previousState) => {
-                return previousState ++;
+                return previousState + 1;
             });
             if (currentScore >= bestScore){
-                setBestScore(currentScore);
+                setBestScore((previousState) => {
+                    return previousState + 1;
+                });
             };
         }
     };
