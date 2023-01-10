@@ -59,8 +59,8 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    border-radius: 10%;
-    padding: 2rem 0.5rem;
+    border-radius: 5%;
+    padding:0.5rem 1vw 0.5rem 1vw;
     background: rgba(0, 0, 0, 0.624);
     border: rgba(0, 0, 0, 0.183) solid 3px;
     /*

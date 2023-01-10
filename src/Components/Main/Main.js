@@ -23,7 +23,7 @@ const Main = () => {
         const bosses = filteredBosses.map((boss) => {
             return ({id: boss.id, name: boss.name, img: boss.image})
         })
-        const cleanupBosses = bosses.filter((boss) => boss.id != "17f69d0313fl0i1uk8pokynv71bkz8" && boss.id != "17f69bd3c06l0i1ulx2jxbiogta1i" && boss.id != "17f698b7d2fl0i1umtkf7cu5a21hdw" && boss.id != "17f69b45618l0i1uuc1z6qlw7hnnq" && boss.id != "17f69d237f0l0i1uytr06ed4gz92qdj" && boss.id != "17f6963b02cl0i1uyzthmeyyq45wna" && boss.id != "17f6982dbf7l0i1v1r3i4p5cy7kvcs" )
+        const cleanupBosses = bosses.filter((boss) => boss.id != "17f69d0313fl0i1uk8pokynv71bkz8" && boss.id != "17f69bd3c06l0i1ulx2jxbiogta1i" && boss.id != "17f698b7d2fl0i1umtkf7cu5a21hdw" && boss.id != "17f69b45618l0i1uuc1z6qlw7hnnq" && boss.id != "17f69d237f0l0i1uytr06ed4gz92qdj" && boss.id != "17f6963b02cl0i1uyzthmeyyq45wna" && boss.id != "17f6982dbf7l0i1v1r3i4p5cy7kvcs" && boss.id != "17f699223e7l0i1uwcol7wflmcgajb" )
         return cleanupBosses;
     };
 
