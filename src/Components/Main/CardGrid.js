@@ -2,7 +2,7 @@ import Card from "./Card.js"
 
 const CardGrid = (props) => {
     return(
-        <div>
+        <div className="cardGrid">
             {props.bosses.map((boss) => {
                 return (
                     <Card

@@ -1,3 +1,9 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     font-family: "ringbearer";
     color: goldenrod
@@ -6,9 +12,74 @@ h1 {
 .header {
     width: 100vw;
     height: 200px;
-    background-image: url(./Images/tarnished.jpeg);
+    background-image: url(./Images/malenia.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-size: 10vw;
+    background-color: rgba(0, 0, 0, 0.045);
+}
+
+main { 
+    border-top: 3px solid goldenrod;
+    width: 80vw;
+    padding: 10vh 10vw;
+    background: linear-gradient(80deg, #7c1010, #7e1b1b, #3A1111);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-content: center;
+}
+
+.scoreBoard {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    color: goldenrod;
+    font-size: 1.75rem;
+    font-family: "ringbearer";
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 10%;
+    padding: 2rem 0.5rem;
+    background: rgba(0, 0, 0, 0.624);
+    border: rgba(0, 0, 0, 0.183) solid 3px;
+    /*
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    */
+}
+
+img {
+    border: goldenrod 3px solid;
+    border-radius: 5%;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+
+}
+
+.card > p {
+    font-size: 1.5rem;
+    font-family: "ringbearer";
+    color: rgba(218, 165, 32, 0.863);
 }
