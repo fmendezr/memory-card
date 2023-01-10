@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react"
+import ScoreBoard from "./ScoreBoard";
+import CardGrid from "./CardGrid";
 
 const Main = () => {
     const [currentScore, setCurrentScore] = useState(0);
@@ -43,6 +45,14 @@ const Main = () => {
 
     return (    
         <main>
+            <ScoreBoard 
+                currentScore={currentScore}
+                bestScore={bestScore}
+            />
+            <CardGrid 
+                bosses={bosses}
+                onCardClick={handleClickedCard}
+            />
         </main>
     )
 }   
