@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.10350e34.css",
+    "main.js": "/memory-card/static/js/main.25d3a6c9.js",
+    "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
+    "static/media/malenia.jpeg": "/memory-card/static/media/malenia.4f1fe99bc3007b3ff6ac.jpeg",
+    "static/media/ringbearer.medium.ttf": "/memory-card/static/media/ringbearer.medium.8a0272fee0cead6c0f5e.ttf",
+    "static/media/github.svg": "/memory-card/static/media/github.f4f316804f6c468799b01fab35bd3220.svg",
+    "index.html": "/memory-card/index.html",
+    "main.10350e34.css.map": "/memory-card/static/css/main.10350e34.css.map",
+    "main.25d3a6c9.js.map": "/memory-card/static/js/main.25d3a6c9.js.map",
+    "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10350e34.css",
+    "static/js/main.25d3a6c9.js"
+  ]
+}
